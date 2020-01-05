@@ -38,7 +38,7 @@ body {
 
 #studentNavBar input {
     font-family: navFont;
-    width: 25%;
+    width: 20%;
     font-size: 24px;
     text-align: center;
     padding: 15px;
@@ -130,19 +130,34 @@ body {
 
 #pageText {
     width: 60%;
+    overflow: hidden;
     margin-left: 15%;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 50px;
+    padding-top: 15px;
     padding-bottom: 50px;
     background-color: beige;
     border: 5px solid #851e3e;
 }
 
 #pageText h1 {
+    border: solid coral 5px;
+    font-size: 38px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #851e3e;
+    color: white;
+    text-align: center;
+}
+
+#pageText h2 {
     font-size: 32px;
     text-align: center;
-    margin-top: 100px;
+}
+
+#pageText h3 {
+    font-size: 28px;
+    text-align: center;
 }
 
 #pageText p {
@@ -157,8 +172,28 @@ body {
 
 #pageText img {
     width: 50%;
-    margin-top: 25px;
     margin-left: 25%;
+}
+
+#pageText input {
+    font-size: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    margin-top: 15px;
+    font-family: navFont;
+    background-color: #851e3e;
+    border: 2.5px solid coral;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    text-indent: none;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#pageText input:hover {
+    background-color: #651e3e;
 }
 
 @font-face {
