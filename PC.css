@@ -44,6 +44,7 @@ body {
     margin: 0;
     cursor: pointer;
     display: block;
+    border-radius: none;
     float: left;
     background-color: #851e3e;
     color: aliceblue;
@@ -68,6 +69,7 @@ body {
     border: none;
     margin: 0;
     cursor: pointer;
+    border-radius: none;
     display: block;
     float: left;
     background-color: #851e3e;
@@ -92,6 +94,7 @@ body {
     padding: 15px;
     border: none;
     margin: 0;
+    border-radius: none;
     cursor: pointer;
     display: block;
     color: aliceblue;

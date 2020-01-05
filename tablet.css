@@ -41,6 +41,7 @@ body {
     cursor: pointer;
     display: block;
     float: left;
+    border-radius: none;
     background-color: #851e3e;
     color: aliceblue;
 }
@@ -51,6 +52,7 @@ body {
 
 #teacherNavBar input {
     width: 100%;
+    border-radius: none;
     font-size: 24px;
     text-align: center;
     padding: 15px;
@@ -81,6 +83,7 @@ body {
     color: aliceblue;
     padding: 15px;
     border: none;
+    border-radius: none;
     margin: 0;
     cursor: pointer;
     display: block;
