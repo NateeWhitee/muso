@@ -169,7 +169,7 @@ body {
     text-decoration: none;
     cursor: pointer;
     text-indent: none;
-    display: block;
+    display: inline;
     text-align: center;
     transition: 0.5s;
 }

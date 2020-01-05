@@ -154,7 +154,7 @@ body {
     color: white;
     text-decoration: none;
     cursor: pointer;
-    display: block;
+    display: inline;
     text-indent: none;
     text-align: center;
     transition: 0.5s;
