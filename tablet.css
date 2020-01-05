@@ -160,8 +160,9 @@ body {
 }
 
 #pageText p {
-    text-indent: 15px;
+    text-indent: 50px;
     margin-bottom: 15px;
+    line-height: 2;
     font-size: 24px;
 }
 
@@ -173,6 +174,24 @@ body {
     width: 50%;
     margin-top: 15px;
     margin-left: 25%;
+}
+
+#getSheetMusic {
+    font-size: 24px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    margin-top: 15px;
+    font-family: navFont;
+    background-color: #851e3e;
+    border: 2.5px solid coral;
+    color: white;
+    float: right;
+    text-decoration: none;
+    cursor: pointer;
+    text-indent: none;
+    text-align: center;
+    transition: 0.5s;
 }
 
 @font-face {

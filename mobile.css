@@ -27,6 +27,7 @@ body {
     border-top: 5px solid #251e3e;
     border-bottom: 5px solid #251e3e;
     width: 100%;
+    font-family: titleFont;
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: center;
@@ -41,7 +42,7 @@ body {
 
 #studentNavBar input {
     width: 100%;
-    font-size: 24px;
+    font-size: 32px;
     text-align: center;
     padding: 15px;
     border: none;
@@ -65,7 +66,7 @@ body {
 
 #teacherNavBar input {
     width: 100%;
-    font-size: 24px;
+    font-size: 32px;
     font-family: navFont;
     text-align: center;
     border-radius: none;
@@ -95,8 +96,8 @@ body {
 }
 
 #bandInstrumentsNavBar input {
-    width: 25%;
-    font-size: 24px;
+    width: 50%;
+    font-size: 32px;
     text-align: center;
     padding: 15px;
     color: aliceblue;
@@ -139,22 +140,40 @@ body {
 }
 
 #pageText h2 {
-    font-size: 38px;
+    font-size: 42px;
     text-align: center;
 }
 
 #pageText h3 {
-    font-size: 32px;
+    font-size: 38px;
     text-align: center;
 }
 
 #pageText p {
-    text-indent: 15px;
+    text-indent: 50px;
     margin-bottom: 15px;
-    font-size: 24px;
+    line-height: 2;
+    font-size: 32px;
 }
 
 #pageText input {
+    font-size: 32px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    left: 0;
+    margin-top: 15px;
+    font-family: navFont;
+    background-color: #851e3e;
+    border: 2.5px solid coral;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    text-indent: none;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#getSheetMusic {
     font-size: 24px;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -164,6 +183,7 @@ body {
     background-color: #851e3e;
     border: 2.5px solid coral;
     color: white;
+    float: right;
     text-decoration: none;
     cursor: pointer;
     text-indent: none;
