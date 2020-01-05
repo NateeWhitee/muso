@@ -22,7 +22,7 @@ body {
 }
 
 #pageTitleText {
-    font-size: 52px;
+    font-size: 42px;
     background-color: #651e3e;
     border-top: 5px solid #251e3e;
     border-bottom: 5px solid #251e3e;
@@ -45,6 +45,7 @@ body {
     text-align: center;
     padding: 15px;
     border: none;
+    font-family: navFont;
     margin: 0;
     border-radius: none;
     cursor: pointer;
@@ -54,13 +55,18 @@ body {
     color: aliceblue;
 }
 
-#studentNavBar input:hover {
-    background-color: #651e3e;
+#studentNavBar input:hover:not(.active) {
+    background-color: coral;
+}
+
+#studentNavBar input.active {
+    background-color: coral;
 }
 
 #teacherNavBar input {
     width: 100%;
     font-size: 24px;
+    font-family: navFont;
     text-align: center;
     border-radius: none;
     padding: 15px;
@@ -73,8 +79,12 @@ body {
     background-color: #851e3e;
 }
 
-#teacherNavBar input:hover {
-    background-color: #651e3e;
+#teacherNavBar input:hover:not(.active) {
+    background-color: coral;
+}
+
+#teacherNavBar input.active {
+    background-color: coral;
 }
 
 #bandInstrumentsNavBar {
@@ -92,6 +102,7 @@ body {
     color: aliceblue;
     border-radius: none;
     border: none;
+    font-family: navFont;
     margin: 0;
     cursor: pointer;
     display: block;
@@ -99,12 +110,15 @@ body {
     background-color: #851e3e;
 }
 
-#bandInstrumentsNavBar input:hover {
-    background-color: #651e3e;
+#bandInstrumentsNavBar input:hover:not(.active) {
+    background-color: coral;
+}
+
+#bandInstrumentsNavBar input.active {
+    background-color: coral;
 }
 
 #pageText {
-    visibility: hidden;
     margin: 0;
     padding-left: 50px;
     padding-right: 50px;
@@ -122,13 +136,23 @@ body {
 #pageText p {
     text-indent: 15px;
     margin-bottom: 15px;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 #pageText ol li {
-    font-size: 32px;
+    font-size: 24px;
 }
 
 #pageText img {
     display: none;
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(titleFont.ttf);
+}
+
+@font-face {
+    font-family: navFont;
+    src: url(navFont.otf);
 }

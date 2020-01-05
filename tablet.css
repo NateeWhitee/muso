@@ -7,14 +7,16 @@ body {
 #pageTitleBanner {
     width: 100%;
     margin: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     background-image: url('studentBannerBackground.jpg');
     border-bottom: 5px solid #251e3e;
 }
 
 #pageTitleText {
-    font-size: 72px;
+    font-size: 42px;
+    font-family: titleFont;
+    letter-spacing: 5px;
     background-color: #651e3e;
     border-top: 5px solid #251e3e;
     border-bottom: 5px solid #251e3e;
@@ -32,6 +34,7 @@ body {
 }
 
 #studentNavBar input {
+    font-family: navFont;
     width: 25%;
     font-size: 24px;
     text-align: center;
@@ -46,12 +49,17 @@ body {
     color: aliceblue;
 }
 
-#studentNavBar input:hover {
-    background-color: #651e3e;
+#studentNavBar input:hover:not(.active) {
+    background-color: coral;
+}
+
+#studentNavBar input.active {
+    background-color: coral;
 }
 
 #teacherNavBar input {
-    width: 100%;
+    width: 25%;
+    font-family: navFont;
     border-radius: none;
     font-size: 24px;
     text-align: center;
@@ -65,8 +73,12 @@ body {
     background-color: #851e3e;
 }
 
-#teacherNavBar input:hover {
-    background-color: #651e3e;
+#teacherNavBar input:hover:not(.active) {
+    background-color: coral;
+}
+
+#teacherNavBar input.active {
+    background-color: coral;
 }
 
 #bandInstrumentsNavBar {
@@ -81,6 +93,7 @@ body {
     font-size: 24px;
     text-align: center;
     color: aliceblue;
+    font-family: navFont;
     padding: 15px;
     border: none;
     border-radius: none;
@@ -91,12 +104,15 @@ body {
     background-color: #851e3e;
 }
 
-#bandInstrumentsNavBar input:hover {
-    background-color: #651e3e;
+#bandInstrumentsNavBar input:hover:not(.active) {
+    background-color: coral;
+}
+
+#bandInstrumentsNavBar input.active {
+    background-color: coral;
 }
 
 #pageText {
-    visibility: hidden;
     margin: 0;
     padding-left: 50px;
     padding-right: 50px;
@@ -114,15 +130,25 @@ body {
 #pageText p {
     text-indent: 15px;
     margin-bottom: 15px;
-    font-size: 32px;
+    font-size: 24px;
 }
 
 #pageText ol li {
-    font-size: 32px;
+    font-size: 24px;
 }
 
 #pageText img {
     width: 50%;
     margin-top: 15px;
     margin-left: 25%;
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(titleFont.ttf);
+}
+
+@font-face {
+    font-family: navFont;
+    src: url(navFont.otf)
 }

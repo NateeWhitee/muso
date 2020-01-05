@@ -16,14 +16,15 @@ body {
 }
 
 #pageTitleText {
-    font-size: 32px;
+    font-size: 42px;
+    font-family: titleFont;
     background-color: #651e3e;
     border: 5px solid #251e3e;
     border-radius: 25px;
-    width: 50%;
-    margin-left: 25%;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    max-width: 75%;
+    margin-left: 12.25%;
+    padding-top: 5px;
+    padding-bottom: 5px;
     text-align: center;
     color: aliceblue;
 }
@@ -36,6 +37,7 @@ body {
 }
 
 #studentNavBar input {
+    font-family: navFont;
     width: 25%;
     font-size: 24px;
     text-align: center;
@@ -48,10 +50,16 @@ body {
     float: left;
     background-color: #851e3e;
     color: aliceblue;
+    transition: 0.3s;
 }
 
-#studentNavBar input:hover {
+#studentNavBar input:hover:not(.active) {
     background-color: #651e3e;
+}
+
+#studentNavBar input.active {
+    background-color: coral;
+    color: black;
 }
 
 #teacherNavBar {
@@ -63,6 +71,7 @@ body {
 
 #teacherNavBar input {
     width: 25%;
+    font-family: navFont;
     font-size: 24px;
     text-align: center;
     padding: 15px;
@@ -74,10 +83,16 @@ body {
     float: left;
     background-color: #851e3e;
     color: aliceblue;
+    transition: 0.3s;
 }
 
-#teacherNavBar input:hover {
+#teacherNavBar input:hover:not(.active) {
     background-color: #651e3e;
+}
+
+#teacherNavBar input.active {
+    background-color: coral;
+    color: black;
 }
 
 #bandInstrumentsNavBar {
@@ -90,6 +105,7 @@ body {
 #bandInstrumentsNavBar input {
     width: 25%;
     font-size: 24px;
+    font-family: navFont;
     text-align: center;
     padding: 15px;
     border: none;
@@ -100,20 +116,26 @@ body {
     color: aliceblue;
     float: left;
     background-color: #851e3e;
+    transition: 0.3s;
 }
 
-#bandInstrumentsNavBar input:hover {
+#bandInstrumentsNavBar input:hover:not(.active) {
     background-color: #651e3e;
 }
 
+#bandInstrumentsNavBar input.active {
+    background-color: coral;
+    color: black;
+}
+
 #pageText {
-    visibility: hidden;
     width: 60%;
     margin-left: 15%;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 50px;
     padding-bottom: 50px;
+    overflow: scroll;
     background-color: beige;
     border: 5px solid #851e3e;
 }
@@ -138,4 +160,14 @@ body {
     width: 50%;
     margin-top: 25px;
     margin-left: 25%;
+}
+
+@font-face {
+    font-family: titleFont;
+    src: url(titleFont.ttf);
+}
+
+@font-face {
+    font-family: navFont;
+    src: url(navFont.otf);
 }
