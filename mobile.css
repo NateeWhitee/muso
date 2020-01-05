@@ -169,26 +169,13 @@ body {
     text-decoration: none;
     cursor: pointer;
     text-indent: none;
+    display: block;
     text-align: center;
     transition: 0.5s;
 }
 
 #getSheetMusic {
-    font-size: 24px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    left: 0;
-    margin-top: 15px;
-    font-family: navFont;
-    background-color: #851e3e;
-    border: 2.5px solid coral;
-    color: white;
     float: right;
-    text-decoration: none;
-    cursor: pointer;
-    text-indent: none;
-    text-align: center;
-    transition: 0.5s;
 }
 
 #pageText ol li {
