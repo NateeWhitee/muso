@@ -1,0 +1,138 @@
+body {
+    background-color: #581e3e;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 0;
+    padding-bottom: 25px;
+}
+
+#pageTitleBanner {
+    width: 100%;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url('studentBannerBackground.jpg');
+    border-bottom: 5px solid #251e3e;
+}
+
+#pageTitleText {
+    font-size: 32px;
+    background-color: #651e3e;
+    border: 5px solid #251e3e;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: aliceblue;
+}
+
+#studentNavBar {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#studentNavBar input {
+    width: 25%;
+    font-size: 24px;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+    display: block;
+    float: left;
+    background-color: #851e3e;
+    color: aliceblue;
+}
+
+#studentNavBar input:hover {
+    background-color: #651e3e;
+}
+
+#teacherNavBar {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#teacherNavBar input {
+    width: 25%;
+    font-size: 24px;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+    display: block;
+    float: left;
+    background-color: #851e3e;
+    color: aliceblue;
+}
+
+#teacherNavBar input:hover {
+    background-color: #651e3e;
+}
+
+#bandInstrumentsNavBar {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#bandInstrumentsNavBar input {
+    width: 25%;
+    font-size: 24px;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    margin: 0;
+    cursor: pointer;
+    display: block;
+    color: aliceblue;
+    float: left;
+    background-color: #851e3e;
+}
+
+#bandInstrumentsNavBar input:hover {
+    background-color: #651e3e;
+}
+
+#pageText {
+    visibility: hidden;
+    width: 60%;
+    margin-left: 15%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: beige;
+    border: 5px solid #851e3e;
+}
+
+#pageText h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#pageText p {
+    text-indent: 25px;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+#pageText ol li {
+    font-size: 24px;
+}
+
+#pageText img {
+    width: 50%;
+    margin-top: 25px;
+    margin-left: 25%;
+}
