@@ -7,143 +7,148 @@ const pageTitleText = document.getElementById('pageTitleText');
 const teacherNavBar = document.getElementById('teacherNavBar');
 let pageText = document.getElementById('pageText');
 
+// Teacher Variables
+const teacherJohnSmith = 'John Smith: contact information<img class="teacherPic" src="johnSmith.jpg">'
+const teacherJaneDoe = 'Jane Doe: contact information<img class="teacherPic" src="janeDoe.jpg">'
+const teacherJohnDoe = 'John Doe: contact information<img class="teacherPic" src="johnDoe.jfif">'
+
 // Teachers
 // band
 // high brass
 const trumpetTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol></ol>`,
     }
 }
 const frenchHornTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li></ol>`,
     }
 }
 
 // low brass
 const tromboneTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li></ol>`,
     }
 }
 const baritoneTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li></ol>`,
     }
 }
 const tubaTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li></ol>`,
     }
 }
 
 // high woodwinds
 const fluteTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li></ol>`,
     }
 }
 const clarinetTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li></ol>`,
     }
 }
 const oboeTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li></ol>`,
     }
 }
 const altoSaxTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li></ol>`,
     }
 }
 const tenorSaxTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol></ol>`,
     }
 }
         
 // low woodwinds
 const bariSaxTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol></ol>`,
     }
 }
 const bassClarinetTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol></ol>`,
     }
 }
 const bassoonTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol></ol>`,
     }
 }
 
 // orchestra
 const violinTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol></ol>`,
     }
 }
 const violaTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol></ol>`,
     }
 }
 const celloTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol></ol>`,
     }
 }
 const stringBassTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol></ol>`,
     }
 }
 
 // vocal
 const sopranoTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol></ol>`,
     }
 }
 const altoTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol></ol>`,
     }
 }
 const tenorTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol></ol>`,
     }
 }
 const bassTeacherList = {
     mo: {
-        springfield: '<ol><li>John Smith: email</li></ol>',
-        nixa: '<ol><li>John Smith: email</li></ol>',
+        springfield: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol>`,
+        nixa: `<ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol></ol>`,
     }
 }
     
@@ -952,3 +957,6 @@ function getSheetMusicBass() {
 
 askForDevice();
 goToTeacherOrStudentPage()
+
+let button = document.getElementById('button');
+alert(window.getComputedStyle(button, null).cssText);
