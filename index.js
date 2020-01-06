@@ -958,5 +958,5 @@ function getSheetMusicBass() {
 askForDevice();
 goToTeacherOrStudentPage()
 
-let button = document.getElementById('button');
+let button = document.getElementById('showInformationPageBtn');
 alert(window.getComputedStyle(button, null).cssText);
