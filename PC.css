@@ -49,8 +49,7 @@ body {
     display: block;
     border-radius: none;
     float: left;
-    background-color: #851e3e;
-    color: aliceblue;
+    background-color: #d25865;
     transition: 0.3s;
 }
 
@@ -82,9 +81,8 @@ body {
     border-radius: none;
     cursor: pointer;
     display: block;
-    color: aliceblue;
     float: left;
-    background-color: #851e3e;
+    background-color: #d25865;
     transition: 0.3s;
 }
 
@@ -116,9 +114,8 @@ body {
     border-radius: none;
     cursor: pointer;
     display: block;
-    color: aliceblue;
     float: left;
-    background-color: #851e3e;
+    background-color: #d25865;
     transition: 0.3s;
 }
 
