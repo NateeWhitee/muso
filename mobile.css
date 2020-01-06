@@ -186,6 +186,15 @@ body {
     display: none;
 }
 
+#pageText img.teacherPic {
+    width: 25%;
+    display: block;
+    margin-left: 0;
+    border: 5px coral groove;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
 @font-face {
     font-family: titleFont;
     src: url(titleFont.ttf);

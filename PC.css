@@ -172,8 +172,17 @@ body {
 }
 
 #pageText img {
+    display: block;
     width: 50%;
     margin-left: 25%;
+}
+
+#pageText img.teacherPic {
+    width: 25%;
+    margin-left: 0;
+    border: 5px coral groove;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 #pageText input {
