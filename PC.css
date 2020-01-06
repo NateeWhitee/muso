@@ -77,7 +77,7 @@ body {
     text-align: center;
     padding: 15px;
     border: none;
-    border-bottom-left-radius: 0px;
+    border-radius: 0px;
     margin: 0;
     cursor: pointer;
     border-radius: none;
@@ -86,6 +86,10 @@ body {
     background-color: #851e3e;
     color: aliceblue;
     transition: 0.3s;
+}
+
+#showInformationPageBtn {
+    border-radius: none;
 }
 
 #teacherNavBar input:hover:not(.active) {
