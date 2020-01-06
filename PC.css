@@ -47,7 +47,6 @@ body {
     margin: 0;
     cursor: pointer;
     display: block;
-    border-radius: none;
     float: left;
     background-color: #d25865;
     transition: 0.3s;
@@ -78,7 +77,6 @@ body {
     border: none;
     border-radius: 0px;
     margin: 0;
-    border-radius: none;
     cursor: pointer;
     display: block;
     float: left;
@@ -111,7 +109,6 @@ body {
     border: none;
     border-radius: 0px;
     margin: 0;
-    border-radius: none;
     cursor: pointer;
     display: block;
     float: left;

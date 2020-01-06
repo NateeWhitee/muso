@@ -44,7 +44,7 @@ body {
     cursor: pointer;
     display: block;
     float: left;
-    border-radius: none;
+    border-radius: 0px;
     background-color: #d25865;
 }
 
@@ -59,7 +59,7 @@ body {
 #teacherNavBar input {
     width: 25%;
     font-family: navFont;
-    border-radius: none;
+    border-radius: 0px;
     font-size: 24px;
     text-align: center;
     padding: 15px;
@@ -92,7 +92,7 @@ body {
     text-align: center;
     font-family: navFont;
     padding: 15px;
-    border: none;
+    border: 0px;
     border-radius: none;
     margin: 0;
     cursor: pointer;
