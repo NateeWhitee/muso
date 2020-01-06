@@ -156,15 +156,12 @@ const bassTeacherList = {
 // customize viewing style
 function askForDevice() {
     if (confirm('Continue using PC or laptop viewing style?')) {
-        document.getElemntsByTagName('input').style.cssText = defaultButtonCSS;
         CSS.setAttribute('href', 'PC.css');
         console.log('Viewing style set to PC/Laptop')
     } else if (confirm('Continue using tablet viewing style?')) {
-        document.getElemntsByTagName('input').style.cssText = defaultButtonCSS;
         CSS.setAttribute('href', 'tablet.css');
         console.log('Viewing style set to tablet')
     } else if (confirm('Contiue using mobile viewing style?')) {
-        document.getElemntsByTagName('input').style.cssText = defaultButtonCSS;
         CSS.setAttribute('href', 'mobile.css');
         console.log('Viewing style set to mobile')
     } else {
@@ -961,3 +958,6 @@ function getSheetMusicBass() {
 
 askForDevice();
 goToTeacherOrStudentPage()
+
+let button = document.getElementById('showInformationPageBtn');
+console.log(window.getComputedStyle(button, null).cssText);
