@@ -6,7 +6,6 @@ const bandInstrumentsNavBar = document.getElementById('bandInstrumentsNavBar');
 const pageTitleText = document.getElementById('pageTitleText');
 const teacherNavBar = document.getElementById('teacherNavBar');
 let pageText = document.getElementById('pageText');
-const defaultButtonCSS = 'animation-delay: 0s; animation-direction: normal; animation-duration: 0s; animation-fill-mode: none; animation-iteration-count: 1; animation-name: none; animation-play-state: running; animation-timing-function: ease; background-attachment: scroll; background-blend-mode: normal; background-clip: border-box; background-color: rgb(240, 240, 240); background-image: none; background-origin: padding-box; background-position: 0% 0%; background-repeat: repeat; background-size: auto; border-bottom-color: rgb(240, 240, 240); border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-bottom-style: outset; border-bottom-width: 2px; border-collapse: separate; border-image-outset: 0px; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; border-left-color: rgb(240, 240, 240); border-left-style: outset; border-left-width: 2px; border-right-color: rgb(240, 240, 240); border-right-style: outset; border-right-width: 2px; border-top-color: rgb(240, 240, 240); border-top-left-radius: 0px; border-top-right-radius: 0px; border-top-style: outset; border-top-width: 2px; bottom: auto; box-shadow: none; box-sizing: border-box; break-after: auto; break-before: auto; break-inside: auto; caption-side: top; clear: none; clip: auto; color: rgb(0, 0, 0); content: normal; cursor: default; direction: ltr; display: inline-block; empty-cells: show; float: none; font-family: Arial; font-kerning: auto; font-optical-sizing: auto; font-size: 13.3333px; font-stretch: 100%; font-style: normal; font-variant: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-numeric: normal; font-variant-east-asian: normal; font-weight: 400; height: auto; image-rendering: auto; isolation: auto; justify-items: normal; justify-self: auto; left: auto; letter-spacing: normal; line-height: normal; list-style-image: none; list-style-position: outside; list-style-type: disc; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; max-height: none; max-width: none; min-height: 0px; min-width: 0px; mix-blend-mode: normal; object-fit: fill; object-position: 50% 50%; offset-distance: 0px; offset-path: none; offset-rotate: auto 0deg; opacity: 1; orphans: 2; outline-color: rgb(0, 0, 0); outline-offset: 0px; outline-style: none; outline-width: 0px; overflow-anchor: auto; overflow-wrap: normal; overflow-x: visible; overflow-y: visible; padding-bottom: 1px; padding-left: 6px; padding-right: 6px; padding-top: 1px; pointer-events: auto; position: static; resize: none; right: auto; scroll-behavior: auto; speak: normal; table-layout: auto; tab-size: 8; text-align: center; text-align-last: auto; text-decoration: none solid rgb(0, 0, 0); text-decoration-line: none; text-decoration-style: solid; text-decoration-color: rgb(0, 0, 0); text-decoration-skip-ink: auto; text-underline-position: auto; text-indent: 0px; text-rendering: auto; text-shadow: none; text-size-adjust: auto; text-overflow: clip; text-transform: none; top: auto; touch-action: auto; transition-delay: 0s; transition-duration: 0s; transition-property: all; transition-timing-function: ease; unicode-bidi: normal; vertical-align: baseline; visibility: visible; white-space: pre; widows: 2; width: auto; will-change: auto; word-break: normal; word-spacing: 0px; z-index: auto; zoom: 1; -webkit-appearance: push-button; backface-visibility: visible; -webkit-border-horizontal-spacing: 0px; -webkit-border-image: none; -webkit-border-vertical-spacing: 0px; -webkit-box-align: stretch; -webkit-box-decoration-break: slice; -webkit-box-direction: normal; -webkit-box-flex: 0; -webkit-box-ordinal-group: 1; -webkit-box-orient: horizontal; -webkit-box-pack: start; -webkit-box-reflect: none; column-count: auto; column-gap: normal; column-rule-color: rgb(0, 0, 0); column-rule-style: none; column-rule-width: 0px; column-span: none; column-width: auto; backdrop-filter: none; align-content: normal; align-items: flex-start; align-self: auto; flex-basis: auto; flex-grow: 0; flex-shrink: 1; flex-direction: row; flex-wrap: nowrap; justify-content: normal; -webkit-font-smoothing: auto; grid-auto-columns: auto; grid-auto-flow: row; grid-auto-rows: auto; grid-column-end: auto; grid-column-start: auto; grid-template-areas: none; grid-template-columns: none; grid-template-rows: none; grid-row-end: auto; grid-row-start: auto; row-gap: normal; -webkit-highlight: none; hyphens: manual; -webkit-hyphenate-character: auto; -webkit-line-break: auto; -webkit-line-clamp: none; -webkit-locale: auto; -webkit-margin-before-collapse: collapse; -webkit-margin-after-collapse: collapse; -webkit-mask-box-image: none; -webkit-mask-box-image-outset: 0px; -webkit-mask-box-image-repeat: stretch; -webkit-mask-box-image-slice: 0 fill; -webkit-mask-box-image-source: none; -webkit-mask-box-image-width: auto; -webkit-mask-clip: border-box; -webkit-mask-composite: source-over; -webkit-mask-image: none; -webkit-mask-origin: border-box; -webkit-mask-position: 0% 0%; -webkit-mask-repeat: repeat; -webkit-mask-size: auto; order: 0; perspective: none; perspective-origin: 50% 50%; -webkit-print-color-adjust: economy; -webkit-rtl-ordering: logical; shape-outside: none; shape-image-threshold: 0; shape-margin: 0px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0.18); -webkit-text-combine: none; -webkit-text-decorations-in-effect: none; -webkit-text-emphasis-color: rgb(0, 0, 0); -webkit-text-emphasis-position: over right; -webkit-text-emphasis-style: none; -webkit-text-fill-color: rgb(0, 0, 0); -webkit-text-orientation: vertical-right; -webkit-text-security: none; -webkit-text-stroke-color: rgb(0, 0, 0); -webkit-text-stroke-width: 0px; transform: none; transform-origin: 50% 50%; transform-style: flat; -webkit-user-drag: auto; -webkit-user-modify: read-only; user-select: none; -webkit-writing-mode: horizontal-tb; -webkit-app-region: none; buffered-rendering: auto; clip-path: none; clip-rule: nonzero; mask: none; filter: none; flood-color: rgb(0, 0, 0); flood-opacity: 1; lighting-color: rgb(255, 255, 255); stop-color: rgb(0, 0, 0); stop-opacity: 1; color-interpolation: srgb; color-interpolation-filters: linearrgb; color-rendering: auto; fill: rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; marker-end: none; marker-mid: none; marker-start: none; mask-type: luminance; shape-rendering: auto; stroke: none; stroke-dasharray: none; stroke-dashoffset: 0px; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1; stroke-width: 1px; alignment-baseline: auto; baseline-shift: 0px; dominant-baseline: auto; text-anchor: start; writing-mode: horizontal-tb; vector-effect: none; paint-order: normal; d: none; cx: 0px; cy: 0px; x: 0px; y: 0px; r: 0px; rx: auto; ry: auto; caret-color: rgb(0, 0, 0); line-break: auto;';
 
 // Teacher Variables
 const teacherJohnSmith = 'John Smith: contact information<img class="teacherPic" src="johnSmith.jpg">'
@@ -318,7 +317,8 @@ function showVocalPage() {
 
 function showDataBaseOfTeachers() {
     changeTitle('<h1>All Teachers</h1>');
-    changeText('<h1>Vocal</h1><h2>Soprano</h2><h3>City, State (There would be multiple of these)</h3><p>List of soprano teachers.</p><h2>Alto</h2><h3>City, State (There would be multiple of these)</h3><p>List of alto teachers</p><h2>Tenor</h2><h3>City, State (There would be multiple of these)</h3><p>List of tenor techers</p><h2>Bass</h2><h3>City, State (There would be multiple of these)</h3><p>List of bass teachers</p><h1>Orchestra</h1><h2>Violin</h2><h3>City, State (There would be multiple of these)</h3><p>List of violin teachers</p><h2>Viola</h2><h3>City, State (There would be multiple of these)</h3><p>List of viola teachers</p><h2>Cello</h2><h3>City, State (There would be multiple of these)</h3><p>List of cello teachers</p><h2>String Bass</h2><h3>City, State (There would be multiple of these)</h3><p>List of string base teachers</p><h1>Band</h1><h2>Trumpet</h2><h3>City, State (There would be multiple of these)</h3><p>List of trumpet teachers</p><h2>French Horn</h2><h3>City, State (There would be multiple of these)</h3><p>List of french horn teachers</p><h2>Baritone/Euphonium</h2><h3>City, State (There would be multiple of these)</h3><p>List of baritone/euphonium teachers</p><h2>Trombone</h2><h3>City, State (There would be multiple of these)</h3><p>List of trombone teachers</p><h2>Tuba</h2><h3>City, State (There would be multiple of these)</h3><p>List of tuba teachers</p>');
+    changeText(`<h1>Vocal</h1><h2>Soprano</h2><h3>Springfield, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h3>Nixa, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h3>Alto</h3><h3>Springfield, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h3>Nixa, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h2>Tenor</h2><h3>Springfield, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h3>Nixa, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h2>Bass</h2><h3>Springfield, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h3>Nixa, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h1>Orchestra</h1><h2>Violin</h2><h3>Springfield, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h3>Nixa, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h2>Viola</h2><h3>Springfield, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h3>Nixa, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h2>Cello</h2><h3>Springfield, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h3>Nixa, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h2>String Bass</h2><h3>Springfield, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h3>Nixa, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h1>Band</h1><h2>Trumpet</h2><h3>Springfield, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h3>Nixa, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h2>French Horn</h2><h3>Springfield, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h3>Nixa, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h2>Baritone/Euphonium</h2><h3>Springfield, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h3>Nixa, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h2>Trombone</h2><h3>Springfield, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h3>Nixa, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h2>Tuba</h2><h3>Springfield, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol><h3>Nixa, MO</h3><ol><li>${teacherJohnSmith}</li><li>${teacherJaneDoe}</li><li>${teacherJohnDoe}</li></ol>`);
+    alert("Hot tip: if you're looking for a specific instrument, press ctl + f to find it.")
     clearActiveBtnBackground();
     document.getElementById('showDataBaseOfTeachers').setAttribute('class', 'active');
     bandInstrumentsNavBar.style.display = 'none';
@@ -347,6 +347,10 @@ function getTeachersTrumpet() {
             if (confirm('Select, "OK" to display the trumpet teachers in Nixa, MO')) {
                 changeText("<h1>List of Trumpet Teachers within Nixa, MO</h1>" + trumpetTeacherList.mo.nixa)
             }
+            break;
+        default:
+            alert("We either aren't aware of any trumpet teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -369,6 +373,10 @@ function getTeachersFrenchHorn() {
             if (confirm('Select, "OK" to display the french horn teachers in Nixa, MO')) {
                 changeText("<h1>List of French Horn Teachers within Nixa, MO</h1>" + frenchHorneacherList.mo.nixa)
             }
+            break;
+        default: 
+            alert("We either aren't aware of any french horn teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -392,6 +400,10 @@ function getTeachersTrombone() {
             if (confirm('Select, "OK" to display the trombone teachers in Nixa, MO')) {
                 changeText("<h1>List of Trombone Teachers within Nixa, MO</h1>" + tromboneTeacherList.mo.nixa)
             }
+            break;
+        default:
+            alert("We either aren't aware of any trombone teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -414,6 +426,10 @@ function getTeachersTuba() {
             if (confirm('Select, "OK" to display the tuba teachers in Nixa, MO')) {
                 changeText("<h1>List of Tuba Teachers within Nixa, MO</h1>" + fluteTeacherList.mo.nixa)
             }
+            break;
+        default:
+            alert("We either aren't aware of any tuba teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -436,6 +452,10 @@ function getTeachersBaritone() {
             if (confirm('Select, "OK" to display the baritone teachers in Nixa, MO')) {
                 changeText("<h1>List of Baritone Teachers within Nixa, MO</h1>" + baritoneTeacherList.mo.nixa)
             }
+            break;
+        default:
+            alert("We either aren't aware of any baritone/euphonium teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -459,6 +479,10 @@ function getTeachersFlute() {
             if (confirm('Select, "OK" to display the flute/piccolo teachers in Nixa, MO')) {
                 changeText("<h1>List of Flute/Piccolo Teachers within Nixa, MO</h1>" + fluteTeacherList.mo.nixa)
             }
+            break;
+        default:
+            alert("We either aren't aware of any flute teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -481,6 +505,10 @@ function getTeachersClarinet() {
             if (confirm('Select, "OK" to display the clarinet teachers in Nixa, MO')) {
                 changeText("<h1>List of Clarinet Teachers within Nixa, MO</h1>" + clarinetTeacherList.mo.nixa)
             }
+            break;
+        default:
+            alert("We either aren't aware of any clarinet teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -503,6 +531,10 @@ function getTeachersOboe() {
             if (confirm('Select, "OK" to display the oboe teachers in Nixa, MO')) {
                 changeText("<h1>List of Oboe Teachers within Nixa, MO</h1>" + oboeTeacherList.mo.nixa);
             }
+            break;
+        default:
+            alert("We either aren't aware of any oboe teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -525,6 +557,10 @@ function getTeachersAltoSax() {
             if (confirm('Select, "OK" to display the alto saxophone teachers in Nixa, MO')) {
                 changeText("<h1>List of Alto Saxophone Teachers within Nixa, MO</h1>" + altoSaxTeacherList.mo.nixa)
             }
+            break;
+        default:
+            alert("We either aren't aware of any alto saxophone teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -547,6 +583,10 @@ function getTeachersTenorSax() {
             if (confirm('Select, "OK" to display the tenor saxophone teachers in Nixa, MO')) {
                 changeText("<h1>List of Tenor Saxophone Teachers within Nixa, MO</h1>" + tenorSaxTeacherList.mo.nixa);
             }
+            break;
+        default:
+            alert("We either aren't aware of any tenor saxophone teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -570,6 +610,10 @@ function getTeachersBariSax() {
             if (confirm('Select, "OK" to display the baritone saxophone teachers in Nixa, MO')) {
                 changeText("<h1>List of Baritone Saxophone Teachers within Nixa, MO</h1>" + bariSaxTeacherList.mo.nixa);
             }
+            break;
+        default:
+            alert("We either aren't aware of any baritone saxophone teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -592,6 +636,10 @@ function getTeeachersBassClarinet() {
             if (confirm('Select, "OK" to display the bass clarient teachers in Nixa, MO')) {
                 changeText("<h1>List of Bass Clarinet Teachers within Nixa, MO</h1>" + bassClarinetTeacherList.mo.nixa);
             }
+            break;
+        default:
+            alert("We either aren't aware of any bass clarinet teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -614,6 +662,10 @@ function getTeachersBassoon() {
             if (confirm('Select, "OK" to display the bassoon teachers in Nixa, MO')) {
                 changeText("<h1>List of Bassoon Teachers within Nixa, MO</h1>" + bassoonTeacherList.mo.nixa);
             }
+            break;
+        default:
+            alert("We either aren't aware of any bassoon teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -637,6 +689,10 @@ function getTeachersViolin() {
             if (confirm('Select, "OK" to display the violin teachers in Nixa, MO')) {
                 changeText("<h1>List of Violin Teachers within Nixa, MO</h1>" + violinTeacherList.mo.nixa);
             }
+            break;
+        default:
+            alert("We either aren't aware of any violin teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -659,6 +715,10 @@ function getTeachersViola() {
             if (confirm('Select, "OK" to display the viola teachers in Nixa, MO')) {
                 changeText("<h1>List of Viola Teachers within Nixa, MO</h1>" + violaTeacherList.mo.nixa);
             }
+            break;
+        default:
+            alert("We either aren't aware of any viola teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -681,6 +741,10 @@ function getTeachersCello() {
             if (confirm('Select, "OK" to display the cello teachers in Nixa, MO')) {
                 changeText("<h1>List of Cello Teachers within Nixa, MO</h1>" + celloTeacherList.mo.nixa);
             }
+            break;
+        default:
+            alert("We either aren't aware of any cello teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -703,6 +767,10 @@ function getTeachersStringBass() {
             if (confirm('Select, "OK" to display the string bass teachers in Nixa, MO')) {
                 changeText("<h1>List of String Bass Teachers within Nixa, MO</h1>" + stringBassTeacherList.mo.nixa);
             }
+            break;
+        default:
+            alert("We either aren't aware of any string bass teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -726,6 +794,10 @@ function getTeachersSoprano() {
             if (confirm('Select, "OK" to display the soprano teachers in Nixa, MO')) {
                 changeText("<h1>List of Soprano Teachers within Nixa, MO</h1>" + sopranoTeacherList.mo.nixa);
             }
+            break;
+        default: 
+            alert("We either aren't aware of any string bass teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -748,6 +820,10 @@ function getTeachersAlto() {
             if (confirm('Select, "OK" to display the alto teachers in Nixa, MO')) {
                 changeText("<h1>List of Alto Teachers within Nixa, MO</h1>" + altoTeacherList.mo.nixa);
             }
+            break;
+        default:
+            alert("We either aren't aware of any string bass teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -770,6 +846,10 @@ function getTeachersTenor() {
             if (confirm('Select, "OK" to display the tenor teachers in Nixa, MO')) {
                 changeText("<h1>List of Tenor Teachers within Nixa, MO</h1>" + tenorTeacherList.mo.nixa);
             }
+            break;
+        default: 
+            alert("We either aren't aware of any string bass teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
@@ -792,6 +872,10 @@ function getTeachersBass() {
             if (confirm('Select, "OK" to display the bass teachers in Nixa, MO')) {
                 changeText("<h1>List of Bass Teachers within Nixa, MO</h1>" + bassTeacherList.mo.nixa);
             }
+            break;
+        default:
+            alert("We either aren't aware of any string bass teachers within that area, or the locationw as misspelled. Feel free to check the All Teachers page to make sure.");
+            break;
     }
 }
 
